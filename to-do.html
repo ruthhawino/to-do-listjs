@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO-LIST</title>
+    <link rel="stylesheet" href="/to-do.css">
+</head>
+<body>
+    <div class="content">
+
+    <h1>To-Do List</h1>
+    <label for="user-id">Enter User ID:</label>
+    <input type="text" id="user-id">
+    <button onclick="fetchTodos()">Fetch Todos</button>
+    
+    <div id="todo-list"></div>
+    
+    <form onsubmit="addTodo()" class="form">
+      <h2>Add New Todo</h2>
+      <label for="new-todo-user-id">User ID:</label>
+      <input type="text" id="new-todo-user-id"><br>
+      <label for="new-todo-title">Title:</label>
+      <input type="text" id="new-todo-title"><br>
+      <button type="submit">Add Todo</button>
+    </form>
+    </div>
+
+<script src="/to-do.js"></script>
+</body>
+</html>
